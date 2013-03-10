@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+    <color name="divider">#FF33B5E5</color>
+    <color name="divider_half_trans">#F033B5E5</color>
+    <color name="divider_trans">#4033B5E5</color>
+    <color name="light_mask">#2000</color>
+    <color name="middle_mask">#5000</color>
+    <color name="heavy_mask">#D000</color>
+</resources>

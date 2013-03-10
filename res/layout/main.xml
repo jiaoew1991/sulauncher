@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:myattr="http://schemas.android.com/apk/res/com.sulauncher"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainFrameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ContentDescription,MergeRootFrame" >
+
+	<ImageView
+		android:id="@+id/backgroundMask" 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@android:color/black" />
+	<include 
+	    layout="@layout/all_app_grid"/>
+	<RelativeLayout
+	    android:id="@+id/mainRelative"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+		android:orientation="vertical" >
+		<FrameLayout 
+			android:id="@+id/clockAndSearchLayout"
+			android:layout_alignParentTop="true"
+			android:layout_width="fill_parent"
+			android:layout_height="80dp" >
+			<TextView
+				android:id="@+id/clockText"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@drawable/clock_background_lightblack"
+				android:gravity="center"
+				android:text="@string/take_place"
+				android:textColor="@android:color/primary_text_dark"
+				android:textSize="60dp" />
+
+			<com.sulauncher.widget.DialTextView
+				android:id="@+id/searchText"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="#0000"
+				android:gravity="center"
+				android:textSize="40dp"
+				android:text="@string/take_place" />
+			<com.sulauncher.widget.HorizontalListView
+			    android:id="@+id/app_container"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:background="@color/heavy_mask"
+			    android:drawingCacheQuality="high" >
+			</com.sulauncher.widget.HorizontalListView>
+
+				<!--
+				android:singleLine="true"
+				  -->
+		</FrameLayout>
+		<LinearLayout
+		    android:id="@+id/dockbar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="60dp"
+			android:background="@drawable/dock_background_lightblack"
+		    android:layout_alignParentBottom="true"
+		    android:layout_gravity="center_horizontal"
+		    android:orientation="horizontal" >
+
+
+
+		    <FrameLayout
+		        android:id="@+id/left_of_dock"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:layout_gravity="center"
+		        android:layout_weight="2"
+		        android:background="#0000" >
+
+				<ImageButton
+				    android:id="@+id/dial_out_image"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_gravity="center|fill"
+				    android:layout_marginBottom="5dp"
+				    android:layout_marginLeft="20dp"
+				    android:layout_marginRight="20dp"
+				    android:layout_marginTop="5dp"
+				    android:background="#3000BC12"
+				    android:src="@android:drawable/ic_menu_call" />
+				<LinearLayout
+				    android:id="@+id/dock_shortcut"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:layout_gravity="center"
+				    android:background="#0000" >
+
+					<ImageButton
+					    android:id="@+id/dial_image"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+					    android:layout_gravity="center"
+					    android:layout_weight="1"
+					    android:background="#0000"
+					    android:src="@drawable/ic_launcher_phone_drawable"
+					    tools:ignore="NestedWeights" />
+		
+					<ImageButton
+						android:id="@+id/sms_image"
+						android:layout_width="fill_parent"
+						android:layout_height="fill_parent"
+						android:layout_weight="1"
+						android:layout_gravity="center"
+						android:background="#0000"
+						android:src="@drawable/ic_launcher_sms_drawable"/>
+				</LinearLayout>
+				
+
+			</FrameLayout>
+
+
+			<FrameLayout
+			    android:id="@+id/middle_of_dock"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_gravity="center"
+			    android:layout_weight="3"
+			    android:background="#0000"
+			    android:src="@drawable/all_app_drawable" >
+
+				<ImageButton
+				    android:id="@+id/all_image"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+				    android:background="#0000"
+				    android:src="@drawable/all_app_drawable" />
+				<ImageButton 
+				    android:id="@+id/remove_number"
+				    android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+				    android:background="#0000"
+				    android:src="@android:drawable/ic_input_delete" />
+			</FrameLayout>
+			<ImageButton 
+			    android:id="@+id/supad_image"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="2"
+				android:layout_gravity="center"
+				android:background="#0000"
+			    android:src="@android:drawable/ic_dialog_dialer"
+			    />
+		</LinearLayout>
+
+		<FrameLayout
+		    android:id="@+id/middleFrameLayout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_above="@id/dockbar"
+		    android:layout_below="@id/clockAndSearchLayout" >
+			
+		    <!--
+			<GridView
+				android:id="@+id/app_container"
+				android:background="@drawable/screen_item_background_darkblack"
+				android:layout_width="180dip"
+				android:layout_height="fill_parent"
+				android:layout_gravity="left"
+				android:columnWidth="60dip"
+				android:visibility="invisible"
+				android:numColumns="2" >
+			</GridView>  -->
+			<LinearLayout
+			    android:id="@+id/searchLists"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:gravity="bottom"
+				android:orientation="horizontal" >
+				<com.sulauncher.search.ConListView
+					android:id="@+id/conList"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:padding="2dp"
+					android:dividerHeight="0dp"
+					android:background="@drawable/screen_item_background_lightblack"
+					android:layout_gravity="top"
+					myattr:one_height="40dip"
+					myattr:show_number="8" />
+				<com.sulauncher.search.AppListView
+					android:id="@+id/appList"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:padding="2dp"
+					android:dividerHeight="0dp"
+					android:background="@drawable/screen_item_background_lightblack"
+					android:layout_gravity="top"
+					myattr:one_height="40dip"
+					myattr:show_number="8" />
+			</LinearLayout>
+			<FrameLayout 
+			    android:id="@+id/PanelFrameLayout"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent">
+			</FrameLayout>
+		</FrameLayout>
+	    <!--<com.sulauncher.slidingbar.FavoriteSlidingDrawer
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        />  -->
+			<!--android:background="@drawable/screen_item_background_lightblack"  -->
+		<FrameLayout
+		    android:id="@+id/supadFrameLayout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_above="@id/dockbar"
+		    tools:ignore="Deprecated" >
+			<!--
+			<com.sulauncher.supad.SuPadView
+				android:id="@+id/suPadView"
+				android:layout_height="240dp"
+				android:layout_width="240dp"
+				android:layout_gravity="bottom|right"
+				myattr:aspect="square" >
+			</com.sulauncher.supad.SuPadView> 
+			-->
+			<ImageView
+				android:id="@+id/listMask"
+				android:layout_width="fill_parent"
+				android:layout_height="270dp"
+				android:layout_gravity="center_horizontal|bottom"
+				android:background="#a0000000" />
+			<com.sulauncher.supad3d.Supad3DView
+				android:id="@+id/supad3DView"
+				android:layout_height="301dp"
+				android:layout_width="301dp"
+				android:layout_gravity="center_horizontal|bottom" >
+				<!--					Don' t know why this is the key to show the foregone view. But it really works!!
+				android:background="@drawable/supad3d_background_lightblack"
+				-->
+				<!--
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent"
+				-->
+			</com.sulauncher.supad3d.Supad3DView>
+			<com.sulauncher.search.GestureHintFrameLayout
+			    android:id="@+id/gestureHintFrameLayout"
+			    android:layout_height="fill_parent"
+			    android:layout_width="fill_parent" />
+        </FrameLayout>
+	</RelativeLayout>
+</FrameLayout>

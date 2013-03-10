@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical" >
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="fill|center|center_vertical"
+		    android:gravity="center_vertical"
+		    android:text="@string/setting_gesture_title"
+		    android:drawablePadding="4dip"
+		    android:textSize="24dip"
+		    android:textColor="@android:color/white"
+		    android:layout_weight="3" />
+		<Button
+		    android:id="@+id/finishButton"
+		    android:layout_width="0dp"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:text="@string/setting_gesture_finish" />
+
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:orientation="vertical" >
+
+		<com.sulauncher.supad3d.Supad3DView
+		    android:id="@+id/setting_lockView"
+		    android:layout_width="320dp"
+		    android:layout_height="320dp"
+		    android:layout_gravity="center|center_vertical" />
+
+	</LinearLayout>
+
+</RelativeLayout>

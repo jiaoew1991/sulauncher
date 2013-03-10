@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!--
+
+	<ListView
+	     android:id="@android:id/list"
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"
+	     android:padding="5dp"
+	     android:scrollbars="none" >
+
+   </ListView>  -->
+     <com.sulauncher.widget.SwipeDeleteListView
+         android:id="@+id/swipe_listview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:divider="@null"
+         android:stackFromBottom="true"
+         android:fadingEdge="vertical"
+         android:scrollbars="none"
+         android:fadingEdgeLength="20dip"
+         android:layout_gravity="bottom|left"
+         android:animateLayoutChanges="true"
+         android:clipToPadding="false"
+         android:clipChildren="false" >
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical" >
+        </LinearLayout>
+     </com.sulauncher.widget.SwipeDeleteListView>
+        
+</LinearLayout>

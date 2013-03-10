@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:textAppearance="@android:attr/textAppearanceSmall"
+    android:drawablePadding="4dip"
+    android:textSize="18dip"
+    android:gravity="center_vertical"
+    android:textColor="@android:color/white"
+    android:singleLine="true"
+    android:paddingBottom="6dip"
+    android:paddingTop="6dip"
+    android:paddingLeft="1dip"
+    android:paddingRight="1dip" />

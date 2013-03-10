@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+        android:id="@+id/menu_systemsetting"
+        android:showAsAction="never"
+        android:title="@string/system_setting"/>
+    <item 
+        android:id="@+id/menu_wallpapersetting"
+        android:showAsAction="never"
+        android:title="@string/wallpaper_setting" />
+    <item 
+        android:id="@+id/menu_gesturesetting"
+        android:showAsAction="never"
+        android:title="@string/setting_gesture_title"/>
+    <item 
+        android:id="@+id/menu_panelsetting"
+        android:showAsAction="never"
+        android:title="@string/panel_setting" />
+    <item 
+        android:id="@+id/menu_addpanel"
+        android:showAsAction="never"
+        android:title="@string/add_panel_setting"/>
+    <item
+        android:id="@+id/menu_quitapp"
+        android:showAsAction="never"
+        android:title="@string/quit_app" />
+</menu>

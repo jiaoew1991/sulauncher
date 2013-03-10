@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Su Launcher</string>
+    <string name="system_setting">系统设置</string>
+    <string name="wallpaper_setting">壁纸设置</string>
+    <string name="quit_app">退出桌面</string>
+    <string name="alert_dialog_ok">确定</string>
+    <string name="alert_dialog_cancel">取消</string>
+    <string name="delete_app_dialog">您要删除该应用程序吗？</string>
+    <string name="choose_app_title">选择应用程序</string>
+    <string name="setting_gesture_title">设置手势</string>
+    <string name="setting_gesture_finish">完成</string>
+    <string name="gesture_used">该手势已被占用,是否覆盖？</string>
+    <string name="add_gesture_success">设置手势成功</string>
+    <string name="add_gesture"> + </string>
+    <string name="take_place">占位占位</string>
+    <string name="please_setting_geture">请设置手势</string>
+    <string name="gesture_inexistence">该手势不存在，请点击菜单键->设置手势进行添加</string>
+    <string name="guide_1">用手指在SuPad上滑动，可以快速“滑出”应用程序</string>
+    <string name="guide_2">轻触列表项目可以删除手势</string>
+    <string name="guide_3">在SuPad上输入应用程序或联系人的拼音，可以快速“拨出”应用程序或联系人</string>
+    <string name="app_icon">程序图标</string>
+    <string name="all_app">所有程序</string>
+    <string name="lockscreen_access_pattern_start">Pattern started</string>
+    <!-- Accessibility description sent when the pattern times out and is cleared. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cleared">Pattern cleared</string>
+    <!-- Accessibility description sent when user adds a cell to the pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_cell_added">Cell added</string>
+    <!-- Accessibility description sent when user completes drawing a pattern. [CHAR LIMIT=NONE] -->
+    <string name="lockscreen_access_pattern_detected">Pattern completed</string>
+    <string name="panel_setting">管理抽屉</string>
+    <string name="add_panel_setting">添加抽屉</string>
+    <string name="panel_full_toast">抽屉太多，不能添加了……</string>
+    <string name="change_name_dialog_title">更改抽屉名字</string>
+    <string name="folder_name">小抽屉</string>
+    <string name="delete_group_item">删除抽屉</string>
+    <string name="choose_delete_group">选择要删除的抽屉</string>
+    <string name="init_mainactivity">初始化…</string>
+    <string name="detected">Detected</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+
+</resources>
