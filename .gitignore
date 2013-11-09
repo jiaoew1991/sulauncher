@@ -1,0 +1,5 @@
+*.swp
+*.iml
+*.DS_Store
+/gen/
+/.idea/
